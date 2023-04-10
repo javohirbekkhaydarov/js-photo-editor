@@ -8,16 +8,25 @@ body {
   width: 100%;
   height: 100vh;
   place-items: center;
-  display: grid; 
+  display: grid;
 }
 
 .container {
-  width: 35%;
+  display: flex;
+  justify-content: space-between;
   height: auto;
   padding: 10px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
   border-radius: 4px;
+  width: 80%;
 }
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
 .container h1 {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -32,8 +41,8 @@ body {
   padding: 5px;
 }
 .view_img img {
-  width: 400px;
-  height: 360px;
+  width: 800px;
+  height: 500px;
   object-fit: contain;
 }
 .choose_img {
@@ -59,6 +68,12 @@ body {
 }
 .choose_img button img {
   width: 35px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
 }
 .slider {
   width: 100%;
